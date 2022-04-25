@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { loginUser } from "../../api/models/user";
-import ButtonPrimary from "../../components/ButtonPrimary";
+import Button from "../../components/Button";
 import InputGroup from "../../components/InputGroup";
 import Navbar from "../../components/Navbar";
 import { useUserContext } from "../../context/userContext";
@@ -96,7 +96,7 @@ const Login = () => {
             errorText={errors.password}
             placeholder="password"
           />
-          <ButtonPrimary
+          <Button
             submitting={isSubmit}
             isLink={false}
             label="Masuk"

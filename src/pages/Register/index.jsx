@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { registerUser } from "../../api/models/user";
-import ButtonPrimary from "../../components/ButtonPrimary";
+import Button from "../../components/Button";
 import InputGroup from "../../components/InputGroup";
 import Navbar from "../../components/Navbar";
 import useSnackbar from "../../hooks/useSnackbar";
@@ -127,7 +127,7 @@ const Register = () => {
             placeholder="Mahasiswa"
             errorText={errors.occupation}
           />
-          <ButtonPrimary
+          <Button
             isLink={false}
             label="Masuk"
             className="w-full"

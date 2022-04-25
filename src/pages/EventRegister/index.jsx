@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../../components/Navbar";
 import coverImage from "../../assets/image/webinar-detail.png";
 import InputGroup from "../../components/InputGroup";
-import ButtonPrimary from "../../components/ButtonPrimary";
+import Button from "../../components/Button";
 import { useNavigate, useParams } from "react-router-dom";
 import {
   getEvent,
@@ -160,7 +160,7 @@ const EventRegister = () => {
                 placeholder="Universitas Brawijaya"
                 disabled={isRegistered.is_registered}
               />
-              <ButtonPrimary
+              <Button
                 submitting={isSubmit}
                 isLink={false}
                 label="Daftar"

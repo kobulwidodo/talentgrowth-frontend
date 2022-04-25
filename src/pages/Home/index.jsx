@@ -1,6 +1,5 @@
-import { Link } from "react-router-dom";
 import cover from "../../assets/image/cover.png";
-import ButtonPrimary from "../../components/ButtonPrimary";
+import Button from "../../components/Button";
 import Navbar from "../../components/Navbar";
 
 const Home = () => {
@@ -20,7 +19,9 @@ const Home = () => {
             Talent Growth is a platform that bridges education and future
             workforce through virtual internships
           </p>
-          <ButtonPrimary isLink={true} label="Get Started" to="/internship" />
+          <div className="text-center sm:text-left">
+            <Button isLink={true} label="Get Started" to="/internship" />
+          </div>
         </div>
         <div className="mx-auto hidden md:block md:w-1/2 lg:w-1/3">
           <img src={cover} alt="" />

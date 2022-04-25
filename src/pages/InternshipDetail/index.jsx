@@ -7,7 +7,7 @@ import {
   uploadCv,
 } from "../../api/models/internship";
 import Alert from "../../components/Alert";
-import ButtonPrimary from "../../components/ButtonPrimary";
+import Button from "../../components/Button";
 import InputGroup from "../../components/InputGroup";
 import Navbar from "../../components/Navbar";
 import coverImage from "../../assets/partner/ruangguru.svg";
@@ -221,7 +221,7 @@ const InternshipDetail = () => {
                 onChange={handlerChangeFile}
                 disabled={isRegistered.is_registered}
               />
-              <ButtonPrimary
+              <Button
                 submitting={isSubmit}
                 isLink={false}
                 label="Daftar"

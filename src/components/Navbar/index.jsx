@@ -2,7 +2,7 @@ import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import logo from "../../assets/logo/logo.png";
 import logoFull from "../../assets/logo/logo-full.png";
-import ButtonPrimary from "../ButtonPrimary";
+import Button from "../Button";
 import { Link, NavLink } from "react-router-dom";
 import classNames from "classnames";
 import { useUserContext } from "../../context/userContext";
@@ -79,13 +79,13 @@ const Navbar = () => {
                   </>
                 ) : (
                   <div className="gap-5 hidden sm:flex">
-                    <ButtonPrimary
+                    <Button
                       className=""
                       isLink={true}
                       label="Login"
                       to="/login"
                     />
-                    <ButtonPrimary
+                    <Button
                       className=""
                       isLink={true}
                       label="Register"
@@ -116,13 +116,13 @@ const Navbar = () => {
               ))}
               {!isAuthenticated ? (
                 <>
-                  <ButtonPrimary
+                  <Button
                     className="block"
                     isLink={true}
                     label="Login"
                     to="/login"
                   />
-                  <ButtonPrimary
+                  <Button
                     className="block"
                     isLink={true}
                     label="Register"
@@ -131,7 +131,7 @@ const Navbar = () => {
                   />
                 </>
               ) : (
-                <ButtonPrimary
+                <Button
                   className="block w-full"
                   isLink={false}
                   label="Logout"
