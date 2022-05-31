@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://floating-eyrie-08969.herokuapp.com/api";
+const BASE_URL = "http://174.129.71.113:8080/api";
 
 export default axios.create({
   baseURL: BASE_URL,

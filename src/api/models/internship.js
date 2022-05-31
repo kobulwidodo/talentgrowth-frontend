@@ -20,7 +20,7 @@ export const applyInternship = (age, college, major, id) => {
 export const uploadCv = (file, id) => {
   const formData = new FormData();
   formData.append("file", file);
-  return coreApi.post(`/internship-applicant/create/cv/${id}`, formData, {
+  return coreApi.post(`/internship-applicant/${id}/upload-s3`, formData, {
     headers: { "Content-Type": "multipart/form-data" },
   });
 };
